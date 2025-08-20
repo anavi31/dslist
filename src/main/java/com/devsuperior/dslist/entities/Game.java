@@ -22,7 +22,9 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game () {
@@ -129,7 +131,5 @@ public class Game {
 		Game other = (Game) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
 	
 }
